@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimal-ui, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>cupidone</title>
     <link href="index.css" rel="stylesheet">
     <script type="text/javascript" src="index.js"></script>
@@ -17,29 +16,23 @@
     </noscript>
     <div id="root" class="container">
         <header>
-            cupidone
+            <b>cupidone</b>
         </header>
         <main>
-            <div class="column">
+            <div class="column" data-column-state="backlog">
                 <div class="title">backlog</div>
-                <div class="card" data-card-id="1">🔵 hello</div>
-                <div class="card">🔵 world</div>
             </div>
-            <div class="column">
+            <div class="column" data-column-state="to do">
                 <div class="title">to do</div>
-                <div class="card">⚪ MVP</div>
             </div>
-            <div class="column">
+            <div class="column" data-column-state="in progress">
                 <div class="title">in progress</div>
-                <div class="card">🟡 cupidone</div>
             </div>
-            <div class="column">
+            <div class="column" data-column-state="done">
                 <div class="title">done</div>
-                <div class="card">🟢 yeah</div>
             </div>
-            <div class="column">
+            <div class="column" data-column-state="outdated">
                 <div class="title">outdated</div>
-                <div class="card">⭕ no way!</div>
             </div>
         </main>
         <footer>
@@ -62,7 +55,8 @@
             <h2>Description:</h2>
             <div class="description"></div>
             <h2>Checklist:</h2>
-            <div class="checklist"></div>
+            <h3 id="modal-checklist-name"></h3>
+            <div id="modal-checklist-items"></div>
             <button class="modal-close modal-exit">Close</button>
         </div>
     </div>

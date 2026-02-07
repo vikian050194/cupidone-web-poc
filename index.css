@@ -1,18 +1,3 @@
-:root {
-    --color-red: #EC4339;
-    --color-green: #7CB82F;
-    --color-blue: #00A0DC;
-    --color-yellow: #EFB920;
-    --color-pink: #ED4795;
-    --color-cyan: #00AEB3;
-    --color-violet: #8C68CB;
-    --color-orange: #F47B16;
-    --color-grey-light: #d3d3d3;
-    --color-grey-dark: #808080;
-    --color-black: #000000;
-    --color-white: #ffffff;
-}
-
 body {
     margin: 0;
 }
@@ -56,8 +41,15 @@ footer {
     height: 100%;
 }
 
+.title {
+    margin: 4px;
+}
+
 .card {
     cursor: default;
+    padding: 8px;
+    border: 1px dotted gray;
+    margin: 4px;
 }
 
 .modal {
@@ -89,4 +81,8 @@ footer {
     position: relative;
     padding: 8px;
     border: 1px dotted gray;
+}
+
+.modal button {
+    margin-top: 8px;
 }

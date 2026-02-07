@@ -21,17 +21,104 @@ class Card {
 const cards = [
     new Card(
         id = 1,
-        title = "Converter from Trello to cupidone.md",
+        title = "aaaaa",
         description = [
-            "Make Trello to cupidone.md converter to make migration possible."
+            "aaaaa",
+            "aaaaa",
+            "aaaaa"
         ],
-        state = "done",
-        checklistName = "Sub-tasks",
+        state = "backlog",
+        checklistName = "AAAAA",
         checklist = [
-            new ChecklistItem("foo", "incomplete"),
-            new ChecklistItem("bar", "complete")
+            new ChecklistItem("aaaaa 1", "incomplete"),
+            new ChecklistItem("aaaaa 2", "incomplete")
+        ],
+        types = ["bug"],
+        createdAt = "2025-12-12T23:19:00"
+    ),
+    new Card(
+        id = 2,
+        title = "bbbbb",
+        description = [
+            "bbbbb",
+            "bbbbb",
+            "bbbbb"
+        ],
+        state = "to do",
+        checklistName = "BBBBB",
+        checklist = [
+            new ChecklistItem("bbbbb 1", "incomplete"),
+            new ChecklistItem("bbbbb 2", "incomplete")
+        ],
+        types = ["tech"],
+        createdAt = "2025-12-12T23:19:00"
+    ),
+    new Card(
+        id = 3,
+        title = "ccccc",
+        description = [
+            "ccccc",
+            "ccccc",
+            "ccccc"
+        ],
+        state = "in progress",
+        checklistName = "CCCCC",
+        checklist = [
+            new ChecklistItem("ccccc 1", "complete"),
+            new ChecklistItem("ccccc 2", "incomplete")
         ],
         types = ["business"],
+        createdAt = "2025-12-12T23:19:00"
+    ),
+    new Card(
+        id = 4,
+        title = "ddddd",
+        description = [
+            "ddddd",
+            "ddddd",
+            "ddddd"
+        ],
+        state = "done",
+        checklistName = "DDDDD",
+        checklist = [
+            new ChecklistItem("ddddd 1", "complete"),
+            new ChecklistItem("ddddd 2", "complete")
+        ],
+        types = ["marketing"],
+        createdAt = "2025-12-12T23:19:00"
+    ),
+    new Card(
+        id = 5,
+        title = "eeeee",
+        description = [
+            "eeeee",
+            "eeeee",
+            "eeeee"
+        ],
+        state = "outdated",
+        checklistName = "EEEEE",
+        checklist = [
+            new ChecklistItem("eeeee 1", "incomplete"),
+            new ChecklistItem("eeeee 2", "incomplete")
+        ],
+        types = ["bug", "tech", "business", "marketing"],
+        createdAt = "2025-12-12T23:19:00"
+    ),
+    new Card(
+        id = 6,
+        title = "fffff",
+        description = [
+            "fffff",
+            "fffff",
+            "fffff"
+        ],
+        state = "done",
+        checklistName = "FFFFF",
+        checklist = [
+            new ChecklistItem("fffff 1", "complete"),
+            new ChecklistItem("fffff 2", "complete")
+        ],
+        types = ["marketing"],
         createdAt = "2025-12-12T23:19:00"
     ),
 ]
@@ -74,7 +161,8 @@ window.addEventListener("load", () => {
         $modal.querySelector("#modal-state").innerHTML = `${cardStateEmojiesMap[card.state]} ${card.state}`;
         $modal.querySelector("div.description").innerHTML = card.description.map(p => `<p>${p}</p>`).join("");
         if (card.checklistName) {
-            $modal.querySelector("div.checklist").innerHTML = card.checklist.map(item => `<p>${checklistStateEmojiesMap[item.state]} ${item.name}</p>`).join("");
+            $modal.querySelector("#modal-checklist-name").innerHTML = card.checklistName;
+            $modal.querySelector("#modal-checklist-items").innerHTML = card.checklist.map(item => `<div>${checklistStateEmojiesMap[item.state]} ${item.name}</div>`).join("");
         } else {
             $modal.querySelector("div.checklist").innerHTML = "empty";
         }
@@ -88,12 +176,27 @@ window.addEventListener("load", () => {
         });
     };
 
-    document.querySelectorAll("div.card").forEach(function (trigger) {
-        trigger.addEventListener("click", function (event) {
-            event.preventDefault();
-            const cardIdValue = event.target.getAttribute("data-card-id");
-            const cardId = parseInt(cardIdValue);
-            openModal(cardId);
-        });
+    const onCardClick = function (event) {
+        event.preventDefault();
+        const cardIdValue = event.target.getAttribute("data-card-id");
+        const cardId = parseInt(cardIdValue);
+        openModal(cardId);
+    };
+
+    const columnsMap = {};
+
+    document.querySelectorAll("div.column").forEach(function (column) {
+        const solumnState = column.getAttribute("data-column-state");
+        columnsMap[solumnState] = column;
     });
+
+    cards.forEach((card) => {
+        const cardText = document.createTextNode(`${cardStateEmojiesMap[card.state]} ${card.title}`);
+        const cardFace = document.createElement("div");
+        cardFace.setAttribute("data-card-id", card.id);
+        cardFace.classList.add("card");
+        cardFace.appendChild(cardText);
+        cardFace.addEventListener("click", onCardClick);
+        columnsMap[card.state].appendChild(cardFace);
+    })
 });

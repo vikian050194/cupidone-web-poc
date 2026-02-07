@@ -1,0 +1,64 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+    viewBox="0 0 32 32">
+    <rect x="0" y="0" width="100%" height="100%" fill="white" stroke="black" stroke-width="1" />
+
+    <line x1="4" y1="2" x2="28" y2="2" stroke="grey" stroke-width="1" />
+    <line x1="3" y1="3" x2="29" y2="3" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="4" x2="30" y2="4" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="5" x2="30" y2="5" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="6" x2="6" y2="6" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="6" x2="30" y2="6" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="7" x2="6" y2="7" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="7" x2="30" y2="7" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="8" x2="6" y2="8" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="8" x2="30" y2="8" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="9" x2="6" y2="9" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="9" x2="30" y2="9" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="10" x2="6" y2="10" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="11" x2="6" y2="11" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="12" x2="6" y2="12" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="13" x2="6" y2="13" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="14" x2="6" y2="14" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="15" x2="6" y2="15" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="16" x2="6" y2="16" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="17" x2="6" y2="17" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="18" x2="6" y2="18" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="19" x2="6" y2="19" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="20" x2="6" y2="20" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="21" x2="6" y2="21" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="22" x2="6" y2="22" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="23" x2="6" y2="23" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="23" x2="30" y2="23" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="24" x2="6" y2="24" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="24" x2="30" y2="24" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="25" x2="6" y2="25" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="25" x2="30" y2="25" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="26" x2="6" y2="26" stroke="grey" stroke-width="1" />
+    <line x1="26" y1="26" x2="30" y2="26" stroke="grey" stroke-width="1" />
+
+    <line x1="2" y1="27" x2="30" y2="27" stroke="grey" stroke-width="1" />
+    <line x1="2" y1="28" x2="30" y2="28" stroke="grey" stroke-width="1" />
+    <line x1="3" y1="29" x2="29" y2="29" stroke="grey" stroke-width="1" />
+    <line x1="4" y1="30" x2="28" y2="30" stroke="grey" stroke-width="1" />
+
+    <line x1="12" y1="12" x2="15" y2="12" stroke="pink" stroke-width="1" />
+    <line x1="17" y1="12" x2="20" y2="12" stroke="pink" stroke-width="1" />
+    <line x1="11" y1="13" x2="21" y2="13" stroke="pink" stroke-width="1" />
+    <line x1="10" y1="14" x2="22" y2="14" stroke="pink" stroke-width="1" />
+    <line x1="10" y1="15" x2="22" y2="15" stroke="pink" stroke-width="1" />
+    <line x1="10" y1="16" x2="22" y2="16" stroke="pink" stroke-width="1" />
+    <line x1="11" y1="17" x2="21" y2="17" stroke="pink" stroke-width="1" />
+    <line x1="12" y1="18" x2="20" y2="18" stroke="pink" stroke-width="1" />
+    <line x1="13" y1="19" x2="19" y2="19" stroke="pink" stroke-width="1" />
+    <line x1="14" y1="20" x2="18" y2="20" stroke="pink" stroke-width="1" />
+    <line x1="15" y1="21" x2="17" y2="21" stroke="pink" stroke-width="1" />
+</svg>
