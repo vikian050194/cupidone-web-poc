@@ -18,6 +18,50 @@ class Card {
     }
 }
 
+const makeCardFromDict = source => {
+    const checklist = [];
+    for (const item of source["checklist"]) {
+        checklist.push(new ChecklistItem(item["name"], item["state"]));
+    }
+    return new Card(
+        source["id"],
+        source["title"],
+        source["description"],
+        source["state"],
+        source["checklistName"],
+        checklist,
+        source["types"],
+        source["createdAt"]
+    );
+}
+
+var foo = [
+    {
+        id: 1,
+        title: "aaaaa",
+        description: [
+            "aaaaa",
+            "aaaaa",
+            "aaaaa"
+        ],
+        state: "backlog",
+        checklistName: "AAAAA",
+        checklist: [
+            {
+                name: "aaaaa 1",
+                state: "incomplete"
+            }, {
+                name: "aaaaa 2",
+                state: "incomplete"
+            }
+        ],
+        types: ["bug"],
+        createdAt: "2025-12-12T23:19:00"
+    }
+]
+
+var bar = foo.map(makeCardFromDict);
+
 const cards = [
     new Card(
         id = 1,
