@@ -1,140 +1,144 @@
-[
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-12T23:19:00",
-        "description": [
-            "Make Trello to cupidone.md converter to make migration possible."
-        ],
-        "file_name": "todo/0001.md",
-        "id": 1,
-        "name": "Converter from Trello to cupidone.md",
-        "state": "done",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-12T23:23:00",
-        "description": [
-            "Todo item is source of truth. It's needed to (re)build todo.md by current todo items."
-        ],
-        "file_name": "todo/0002.md",
-        "id": 2,
-        "name": "Build todo.md by todo items",
-        "state": "done",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": "Stuff to do",
-        "created_at": "2025-12-14T13:43:00",
-        "description": [
-            "Make new \"add\" command to add new issue via CLI."
-        ],
-        "file_name": "todo/0003.md",
-        "id": 3,
-        "name": "Add command to add new issue",
-        "state": "to do",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": "Stuff to do",
-        "created_at": "2025-12-14T13:47:00",
-        "description": [
-            "Make HTML converter to view issues as HTML on static web site."
-        ],
-        "file_name": "todo/0004.md",
-        "id": 4,
-        "name": "HTML converter",
-        "state": "to do",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-14T13:49:00",
-        "description": [
-            "Release the package."
-        ],
-        "file_name": "todo/0005.md",
-        "id": 5,
-        "name": "Release package",
-        "state": "to do",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-14T13:53:00",
-        "description": [
-            "Convert vanillla `TODO.md` file to `cupidone` files in `md` format and corresponding data structure"
-        ],
-        "file_name": "todo/0006.md",
-        "id": 6,
-        "name": "Converter from vanilla md to cupidone.md",
-        "state": "to do",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-25T14:47:00",
-        "description": [
-            "empty"
-        ],
-        "file_name": "todo/0007.md",
-        "id": 7,
-        "name": "Add command to init empty project",
-        "state": "done",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2025-12-29T19:20:00",
-        "description": [
-            "empty"
-        ],
-        "file_name": "todo/0008.md",
-        "id": 8,
-        "name": "Make CLI",
-        "state": "done",
-        "types": [
-            "business"
-        ]
-    },
-    {
-        "checklist": [],
-        "checklist_name": null,
-        "created_at": "2026-01-12T20:02:42",
-        "description": [
-            "Card description"
-        ],
-        "file_name": "todo/0009.md",
-        "id": 9,
-        "name": "New card name",
-        "state": "backlog",
-        "types": [
-            "bug",
-            "tech",
-            "business",
-            "marketing"
-        ]
-    }
-]
+{
+    "cards": [
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-12T23:19:00",
+            "description": [
+                "Make Trello to cupidone.md converter to make migration possible."
+            ],
+            "file_name": "todo/0001.md",
+            "id": 1,
+            "name": "Converter from Trello to cupidone.md",
+            "state": "done",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-12T23:23:00",
+            "description": [
+                "Todo item is source of truth. It's needed to (re)build todo.md by current todo items."
+            ],
+            "file_name": "todo/0002.md",
+            "id": 2,
+            "name": "Build todo.md by todo items",
+            "state": "done",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": "Stuff to do",
+            "created_at": "2025-12-14T13:43:00",
+            "description": [
+                "Make new \"add\" command to add new issue via CLI."
+            ],
+            "file_name": "todo/0003.md",
+            "id": 3,
+            "name": "Add command to add new issue",
+            "state": "to do",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": "Stuff to do",
+            "created_at": "2025-12-14T13:47:00",
+            "description": [
+                "Make HTML converter to view issues as HTML on static web site."
+            ],
+            "file_name": "todo/0004.md",
+            "id": 4,
+            "name": "HTML converter",
+            "state": "to do",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-14T13:49:00",
+            "description": [
+                "Release the package."
+            ],
+            "file_name": "todo/0005.md",
+            "id": 5,
+            "name": "Release package",
+            "state": "to do",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-14T13:53:00",
+            "description": [
+                "Convert vanillla `TODO.md` file to `cupidone` files in `md` format and corresponding data structure"
+            ],
+            "file_name": "todo/0006.md",
+            "id": 6,
+            "name": "Converter from vanilla md to cupidone.md",
+            "state": "to do",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-25T14:47:00",
+            "description": [
+                "empty"
+            ],
+            "file_name": "todo/0007.md",
+            "id": 7,
+            "name": "Add command to init empty project",
+            "state": "done",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2025-12-29T19:20:00",
+            "description": [
+                "empty"
+            ],
+            "file_name": "todo/0008.md",
+            "id": 8,
+            "name": "Make CLI",
+            "state": "done",
+            "types": [
+                "business"
+            ]
+        },
+        {
+            "checklist": [],
+            "checklist_name": null,
+            "created_at": "2026-01-12T20:02:42",
+            "description": [
+                "Card description"
+            ],
+            "file_name": "todo/0009.md",
+            "id": 9,
+            "name": "New card name",
+            "state": "backlog",
+            "types": [
+                "bug",
+                "tech",
+                "business",
+                "marketing"
+            ]
+        }
+    ],
+    "build": "2025-04-27T21:51:14",
+    "title": "cupidone"
+}

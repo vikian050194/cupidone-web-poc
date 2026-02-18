@@ -107,7 +107,10 @@ window.addEventListener("load", async () => {
 
     const response = await fetch("data.json");
     const data = await response.json();
-    const cards = data.map(makeCardFromDict);
+    document.title = data.title;
+    document.querySelector("#title").innerHTML = data.title;
+    document.querySelector("#build").innerHTML = `build ${data.build}`;
+    const cards = data.cards.map(makeCardFromDict);
 
     cards.forEach((card) => {
         const cardText = document.createTextNode(`${cardStateEmojiesMap[card.state]} ${card.name}`);
